@@ -178,7 +178,23 @@ xcopy "$(ProjectDir)..\External\KamataEngine\shaders" "$(ProjectDir)Resources\En
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DirectXGame\Enemy.cpp" />
+    <ClCompile Include="DirectXGame\Enemy2.cpp" />
+    <ClCompile Include="DirectXGame\GameScene.cpp" />
+    <ClCompile Include="DirectXGame\Particle.cpp" />
+    <ClCompile Include="DirectXGame\Player.cpp" />
+    <ClCompile Include="DirectXGame\Stage.cpp" />
+    <ClCompile Include="DirectXGame\WorldTransformEx.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DirectXGame\Enemy.h" />
+    <ClInclude Include="DirectXGame\Enemy2.h" />
+    <ClInclude Include="DirectXGame\GameScene.h" />
+    <ClInclude Include="DirectXGame\Particle.h" />
+    <ClInclude Include="DirectXGame\Player.h" />
+    <ClInclude Include="DirectXGame\Stage.h" />
+    <ClInclude Include="External\KamataEngine\include\math\MathUtility.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
